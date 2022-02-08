@@ -12,7 +12,7 @@ create("create-nuudel", {
   templateRoot,
   promptForTemplate: false,
   modifyName: (name) => {
-    const regexDashCase = /^[a-z]+(-[a-z]+)*$/;
+    const regexDashCase = /^[a-zA-Z]+(-[a-zA-Z]+)*$/;
 
     if (!regexDashCase.test(name)) {
       throw new Error("Project name must be dash-cased. For example my-app");
@@ -21,9 +21,8 @@ create("create-nuudel", {
     if (!name.includes("-")) {
       console.log(stripIndents`
               NOTE: Because your project name is not dash-case,
-              "element" has been added as a suffix.
           `);
-      return `${name}-element`;
+      return `${name}`;
     }
 
     return name;
@@ -42,6 +41,6 @@ create("create-nuudel", {
       Successfully created your Nuudel project!
       Now run:
       cd ${name}
-      yarn dev
+      yarn
   `,
 });
