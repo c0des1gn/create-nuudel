@@ -12,17 +12,10 @@ create("create-nuudel", {
   templateRoot,
   promptForTemplate: false,
   modifyName: (name) => {
-    const regexDashCase = /^[a-zA-Z]+(-[a-zA-Z]+)*$/;
+    const regexDashCase = /^[a-zA-Z0-9]+(-[a-zA-Z0-9]+)*$/;
 
     if (!regexDashCase.test(name)) {
       throw new Error("Project name must be dash-cased. For example my-app");
-    }
-
-    if (!name.includes("-")) {
-      console.log(stripIndents`
-              NOTE: Because your project name is not dash-case,
-          `);
-      return `${name}`;
     }
 
     return name;
@@ -36,7 +29,7 @@ create("create-nuudel", {
       prompt: 'if-no-arg',
     },
   }, // */
-  after: ({ name, answers }) => console.log(`Your project: ${name}.`),
+  //after: ({ name }) => console.log(`Your project: ${name}.`),
   caveat: ({ name }) => stripIndents`
       Successfully created your Nuudel project!
       Now run:
