@@ -1,3 +1,6 @@
 [submodule "nuudel"]
-	path = templates/default/nuudel/
+	path = templates/typescript/
+	url = https://github.com/c0des1gn/nuudel.git
+[submodule "templates/typescript"]
+	path = templates/typescript
 	url = https://github.com/c0des1gn/nuudel.git
