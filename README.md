@@ -18,7 +18,7 @@ See https://github.com/uetchy/create-create-app#template for the further details
 
 # git submodules
 
-git submodule add https://github.com/c0des1gn/nuudel.git nuudel
+git submodule add https://github.com/c0des1gn/nuudel.git templates/default
 git submodule init
-git submodule update --remote
+git submodule update --remote --init --recursive
 rm -rf .git/modules/nuudel
