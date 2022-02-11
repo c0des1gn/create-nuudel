@@ -34,6 +34,8 @@ create("create-nuudel", {
       Successfully created your Nuudel project!
       Now run:
       cd ${name}
-      yarn
+      yarn dev
+      <then in another terminal>
+      yarn next
   `,
 });
