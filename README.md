@@ -8,6 +8,10 @@ create nuudel app
 npx create-nuudel <name>
 ```
 
+```bash
+yarn create create-nuudel <name>
+```
+
 ## Template string reference
 
 > remove this before publishing your package!
@@ -21,3 +25,4 @@ See https://github.com/uetchy/create-create-app#template for the further details
 git submodule add https://github.com/c0des1gn/nuudel.git templates/default
 git submodule update --remote templates/default
 rm -rf .git/modules/templates/default
+npm publish
