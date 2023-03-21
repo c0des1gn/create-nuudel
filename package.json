@@ -1,7 +1,7 @@
 {
   "name": "create-nuudel",
   "description": "create nuudel web app",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "author": "Damii <damdinsuren@live.com>",
   "scripts": {
     "build": "tsup src/cli.ts --minify",
