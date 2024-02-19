@@ -9,7 +9,7 @@ npx create-nuudel <name>
 ```
 
 ```bash
-yarn create create-nuudel <name>
+yarn create nuudel <name>
 ```
 
 ## Template string reference
